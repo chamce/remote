@@ -2,9 +2,9 @@
   font-family: questrial;
   font-style: normal;
   font-weight: 400;
-  src: local('Questrial'),
-    url(https://fonts.cdnfonts.com/s/12556/Questrial-Regular.woff)
-      format('woff');
+  src:
+    local("Questrial"),
+    url(https://fonts.cdnfonts.com/s/12556/Questrial-Regular.woff) format("woff");
 }
 
 body {
@@ -57,7 +57,8 @@ html {
 }
 
 .btn.btn-outset {
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 1px 3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .btn-check:checked + .btn.btn-outset,

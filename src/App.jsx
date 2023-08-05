@@ -1,9 +1,8 @@
-import appCss from './App.css?raw';
-// Bootstrap CSS
-import bootstrapCss from 'bootstrap/dist/css/bootstrap.min.css?raw';
-// Bootstrap Bundle JS
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import { Helmet, HelmetProvider } from 'react-helmet-async';
+import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css?raw";
+import { HelmetProvider, Helmet } from "react-helmet-async";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+
+import appCss from "./App.css?raw";
 
 const css = bootstrapCss + appCss;
 
@@ -12,61 +11,47 @@ export default function App({ children }) {
     <HelmetProvider>
       <Helmet>
         <link
+          href="https://chamce.github.io/favicons/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
-          href="https://chamce.github.io/favicons/apple-touch-icon.png"
         ></link>
         <link
-          rel="icon"
+          href="https://chamce.github.io/favicons/favicon-32x32.png"
           type="image/png"
           sizes="32x32"
-          href="https://chamce.github.io/favicons/favicon-32x32.png"
+          rel="icon"
         ></link>
         <link
-          rel="icon"
+          href="https://chamce.github.io/favicons/favicon-16x16.png"
           type="image/png"
           sizes="16x16"
-          href="https://chamce.github.io/favicons/favicon-16x16.png"
+          rel="icon"
         ></link>
-        <link
-          rel="manifest"
-          href="https://chamce.github.io/favicons/manifest.json"
-        ></link>
-        <link
-          rel="mask-icon"
-          href="https://chamce.github.io/favicons/safari-pinned-tab.svg"
-          color="#5bbad5"
-        ></link>
+        <link href="https://chamce.github.io/favicons/manifest.json" rel="manifest"></link>
+        <link href="https://chamce.github.io/favicons/safari-pinned-tab.svg" color="#5bbad5" rel="mask-icon"></link>
         <meta name="msapplication-TileColor" content="#da532c"></meta>
         <meta name="theme-color" content="#ffffff"></meta>
       </Helmet>
-      <style jsx global>
+      <style global jsx>
         {css}
       </style>
       <div className="vstack">
-        <p className="text-center">
-          I am a remote component containing bootstrap and a demo
-          accordion
-        </p>
+        <p className="text-center">I am a remote component containing bootstrap and a demo accordion</p>
         <div className="accordion" id="accordionExample">
           <div className="accordion-item">
             <h2 className="accordion-header">
               <button
-                className="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
                 data-bs-target="#collapseOne"
-                aria-expanded="true"
+                className="accordion-button"
                 aria-controls="collapseOne"
+                data-bs-toggle="collapse"
+                aria-expanded="true"
+                type="button"
               >
                 Accordion Item #1
               </button>
             </h2>
-            <div
-              id="collapseOne"
-              className="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
+            <div className="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne">
               <div className="accordion-body">{children}</div>
             </div>
           </div>
@@ -74,33 +59,22 @@ export default function App({ children }) {
             <h2 className="accordion-header">
               <button
                 className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
                 data-bs-target="#collapseTwo"
-                aria-expanded="false"
                 aria-controls="collapseTwo"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                type="button"
               >
                 Accordion Item #2
               </button>
             </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
+            <div className="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
               <div className="accordion-body">
-                <strong>
-                  This is the second item's accordion body.
-                </strong>{' '}
-                It is hidden by default, until the collapse plugin
-                adds the appropriate classes that we use to style each
-                element. These classes control the overall appearance,
-                as well as the showing and hiding via CSS transitions.
-                You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{' '}
-                <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
@@ -108,33 +82,22 @@ export default function App({ children }) {
             <h2 className="accordion-header">
               <button
                 className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
                 data-bs-target="#collapseThree"
-                aria-expanded="false"
                 aria-controls="collapseThree"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                type="button"
               >
                 Accordion Item #3
               </button>
             </h2>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
+            <div className="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
               <div className="accordion-body">
-                <strong>
-                  This is the third item's accordion body.
-                </strong>{' '}
-                It is hidden by default, until the collapse plugin
-                adds the appropriate classes that we use to style each
-                element. These classes control the overall appearance,
-                as well as the showing and hiding via CSS transitions.
-                You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth
-                noting that just about any HTML can go within the{' '}
-                <code>.accordion-body</code>, though the transition
-                does limit overflow.
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
               </div>
             </div>
           </div>
