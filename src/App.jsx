@@ -151,6 +151,6 @@ TODO fix eslint & prettier rules
 TODO may have babel jsx loader issue
 TODO rewrite wrapper (may want to change sidebar & will want to change fullscreen modal config)
 TODO add pages
-TODO setup host to read from github
+* setup host to read from github
 * need remote component to wrap around host again
 */
