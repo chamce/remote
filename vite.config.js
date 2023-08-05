@@ -16,6 +16,7 @@ export default defineConfig(({ mode }) => ({
     }),
   ],
   build: {
+    outDir: 'docs',
     lib: {
       formats: ['cjs'],
       entry: resolve(__dirname, 'src/remoteEntry.jsx'),
