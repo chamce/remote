@@ -1,13 +1,29 @@
 import react from "@vitejs/plugin-react";
+import { resolve, extname } from "path";
 import babel from "vite-plugin-babel";
 import { defineConfig } from "vite";
-import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  plugins: [
+    react(),
+    babel({
+      babelConfig: {
+        plugins: ["styled-jsx/babel"],
+        configFile: false,
+        babelrc: false,
+      },
+      // uses the jsx loader for .jsx files
+      loader: (path) => {
+        if (extname(path) === ".jsx") {
+          return "jsx";
+        }
+      },
+    }),
+  ],
   build: {
     rollupOptions: {
-      external: ["react", "react-dom", "@paciolan/remote-component", "bootstrap", "styled-jsx"],
+      external: ["@paciolan/remote-component", "bootstrap", "react", "styled-jsx"],
       output: { exports: "named" },
     },
     lib: {
@@ -17,16 +33,6 @@ export default defineConfig(({ mode }) => ({
     },
     outDir: "docs",
   },
-  plugins: [
-    react(),
-    babel({
-      babelConfig: {
-        plugins: ["styled-jsx/babel"],
-        configFile: false,
-        babelrc: false,
-      },
-    }),
-  ],
   define: mode === "production" ? { "process.env.NODE_ENV": '"production"' } : {},
   base: "",
 }));

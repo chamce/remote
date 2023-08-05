@@ -1,3 +1,3 @@
-import App from "./App";
+import BootstrapWrapper from "./BootstrapWrapper";
 
-export default App;
+export default BootstrapWrapper;
