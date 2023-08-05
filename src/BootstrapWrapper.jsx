@@ -7,7 +7,7 @@ import App from "./App";
 
 const css = bootstrapCss + appCss;
 
-function BootstrapWrapper({ children }) {
+const BootstrapWrapper = ({ children }) => {
   return (
     <HelmetProvider>
       <App>
@@ -108,7 +108,7 @@ function BootstrapWrapper({ children }) {
       </App>
     </HelmetProvider>
   );
-}
+};
 
 export default BootstrapWrapper;
 
@@ -119,9 +119,9 @@ export default BootstrapWrapper;
 * may have babel jsx loader issue
 * make sure react helmet config is standard
 * make sure styled jsx config is standard
+* setup host to read from github
+* need remote component to wrap around host again
 TODO rewrite wrapper (may want to change sidebar & will want to change fullscreen modal config)
 TODO add pages
 TODO proper folder structure
-* setup host to read from github
-* need remote component to wrap around host again
 */
