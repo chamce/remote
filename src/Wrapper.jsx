@@ -7,7 +7,7 @@ import App from "./App";
 
 const css = bootstrapCss + appCss;
 
-const BootstrapWrapper = ({ children }) => {
+const Wrapper = ({ children }) => {
   return (
     <HelmetProvider>
       <App>
@@ -110,18 +110,9 @@ const BootstrapWrapper = ({ children }) => {
   );
 };
 
-export default BootstrapWrapper;
+export default Wrapper;
 
 /*
-* need favicons to take priority over vite icon
-* remove unwanted css
-* fix eslint & prettier rules
-* may have babel jsx loader issue
-* make sure react helmet config is standard
-* make sure styled jsx config is standard
-* setup host to read from github
-* need remote component to wrap around host again
 TODO rewrite wrapper (may want to change sidebar & will want to change fullscreen modal config)
-TODO add pages
-TODO proper folder structure
+TODO module http has been externalized for browser compatibility (error when building host)
 */

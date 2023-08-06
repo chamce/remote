@@ -1,3 +1,3 @@
-import BootstrapWrapper from "./BootstrapWrapper";
+import Wrapper from "./Wrapper";
 
-export default BootstrapWrapper;
+export default Wrapper;

@@ -1,10 +1,10 @@
 import ReactDOM from "react-dom/client";
 import React from "react";
 
-import BootstrapWrapper from "./BootstrapWrapper.jsx";
+import Wrapper from "./Wrapper.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BootstrapWrapper>Chance Whitaker</BootstrapWrapper>
+    <Wrapper>Chance Whitaker</Wrapper>
   </React.StrictMode>,
 );
