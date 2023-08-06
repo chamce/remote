@@ -2,7 +2,7 @@ const FloatingButton = () => {
   return (
     <div className="position-fixed top-50 start-0 ms-3 bd-mode-toggle" style={{ transform: "translateY(-50%)" }}>
       <button
-        className="btn btn-bd-primary py-2 d-flex align-items-center justify-content-center shadow bg-gradient rounded-circle"
+        className="btn btn-bd-primary py-2 d-flex align-items-center justify-content-center box-shadow-6 bg-gradient rounded-circle"
         data-bs-target="#offcanvasExample"
         style={{ height: 56, width: 56 }}
         aria-controls="offcanvasExample"

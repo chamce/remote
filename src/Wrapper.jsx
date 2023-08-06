@@ -7,7 +7,7 @@ import appCss from "./App.css?raw";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 import Footer from "./Footer";
-import Middle from "./Middle";
+import Body from "./Body";
 import App from "./App";
 
 const css = bootstrapCss + appCss;
@@ -45,7 +45,7 @@ const Wrapper = ({ children }) => {
         <FloatingButton></FloatingButton>
         <Sidebar>{children}</Sidebar>
         <Header></Header>
-        <Middle></Middle>
+        <Body></Body>
         <Footer></Footer>
       </App>
     </HelmetProvider>
@@ -58,8 +58,7 @@ export default Wrapper;
 
 /*
 TODO finish writing wrapper
-TODO create github repo template of host
+TODO remember page will shift when y scrollbar appears & disappears
 TODO module has been externalized error
 TODO redo enrollment frequency page quickly (keep it simple)
-TODO remember page will shift when y scrollbar appears & disappears
 */

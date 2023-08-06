@@ -1,7 +1,10 @@
-const Middle = ({ children }) => {
+import Fold from "./Fold";
+
+const Body = ({ children }) => {
   return (
     <main className="container">
-      <div className="my-3 p-3 bg-body rounded shadow">
+      <div className="my-3 p-3 bg-body rounded box-shadow-1 position-relative">
+        <Fold></Fold>
         <h6 className="border-bottom pb-2 mb-0">Recent updates</h6>
         <div className="d-flex text-body-secondary pt-3">
           <svg
@@ -101,4 +104,4 @@ const Middle = ({ children }) => {
   );
 };
 
-export default Middle;
+export default Body;

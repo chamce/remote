@@ -1,13 +1,16 @@
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow bg-gradient" aria-label="Eighth navbar example">
+    <nav
+      className="z-2 navbar navbar-expand-lg navbar-dark bg-dark box-shadow-2 bg-gradient"
+      aria-label="Eighth navbar example"
+    >
       <div className="container">
         <a className="navbar-brand" href="/#">
           Container
         </a>
         <button
+          className="navbar-toggler box-shadow-1"
           data-bs-target="#navbarsExample07"
-          className="navbar-toggler shadow"
           aria-controls="navbarsExample07"
           aria-label="Toggle navigation"
           data-bs-toggle="collapse"
