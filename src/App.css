@@ -17,6 +17,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  background-color: #f8f9fa;
 }
 
 .logo {
@@ -52,15 +53,12 @@ body {
   color: #888;
 }
 
-html {
-  overflow-y: scroll;
-}
-
 .btn.btn-outset {
   box-shadow:
     rgba(0, 0, 0, 0.4) 0px 1px 3px,
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
+
 .btn-check:checked + .btn.btn-outset,
 .btn.btn-outset.active,
 .btn.btn-outset.show,
@@ -68,6 +66,33 @@ html {
 :not(.btn-check) + .btn.btn-outset:active {
   box-shadow: rgba(0, 0, 0, 0) 0 0 0 0;
 }
+
 .btn.btn-outset:hover {
   box-shadow: rgba(0, 0, 0, 0) 0 0 0 0;
+}
+
+/*! CSS Used from: Embedded */
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+.btn-bd-primary {
+  --bd-violet-bg: #712cf9;
+  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bd-violet-bg);
+  --bs-btn-border-color: var(--bd-violet-bg);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: #6528e0;
+  --bs-btn-hover-border-color: #6528e0;
+  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #5a23c8;
+  --bs-btn-active-border-color: #5a23c8;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
 }

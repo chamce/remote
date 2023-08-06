@@ -2,7 +2,12 @@ import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css?raw";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
+import FloatingButton from "./FloatingButton";
 import appCss from "./App.css?raw";
+import Sidebar from "./Sidebar";
+import Header from "./Header";
+import Footer from "./Footer";
+import Middle from "./Middle";
 import App from "./App";
 
 const css = bootstrapCss + appCss;
@@ -37,74 +42,11 @@ const Wrapper = ({ children }) => {
         <style global jsx>
           {css}
         </style>
-        <div className="vstack">
-          <p className="text-center">I am a remote component containing bootstrap and a demo accordion</p>
-          <div className="accordion" id="accordionExample">
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  data-bs-target="#collapseOne"
-                  className="accordion-button"
-                  aria-controls="collapseOne"
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  type="button"
-                >
-                  Accordion Item #1
-                </button>
-              </h2>
-              <div className="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne">
-                <div className="accordion-body">{children}</div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed"
-                  data-bs-target="#collapseTwo"
-                  aria-controls="collapseTwo"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  type="button"
-                >
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div className="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
-                <div className="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-            <div className="accordion-item">
-              <h2 className="accordion-header">
-                <button
-                  className="accordion-button collapsed"
-                  data-bs-target="#collapseThree"
-                  aria-controls="collapseThree"
-                  data-bs-toggle="collapse"
-                  aria-expanded="false"
-                  type="button"
-                >
-                  Accordion Item #3
-                </button>
-              </h2>
-              <div className="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
-                <div className="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                  plugin adds the appropriate classes that we use to style each element. These classes control the
-                  overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this
-                  with custom CSS or overriding our default variables. It's also worth noting that just about any HTML
-                  can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <FloatingButton></FloatingButton>
+        <Sidebar>{children}</Sidebar>
+        <Header></Header>
+        <Middle></Middle>
+        <Footer></Footer>
       </App>
     </HelmetProvider>
   );
@@ -112,7 +54,12 @@ const Wrapper = ({ children }) => {
 
 export default Wrapper;
 
+// ! always keep it simple
+
 /*
-TODO rewrite wrapper (may want to change sidebar & will want to change fullscreen modal config)
-TODO module http has been externalized for browser compatibility (error when building host)
+TODO finish writing wrapper
+TODO create github repo template of host
+TODO module has been externalized error
+TODO redo enrollment frequency page quickly (keep it simple)
+TODO remember page will shift when y scrollbar appears & disappears
 */
