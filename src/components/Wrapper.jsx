@@ -2,11 +2,10 @@ import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css?raw";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
-import FloatingButton from "./FloatingButton";
-import appCss from "./App.css?raw";
+import appCss from "../styles/App.css?raw";
 import Sidebar from "./Sidebar";
-import Header from "./Header";
 import Footer from "./Footer";
+import Header from "./Header";
 import Body from "./Body";
 import App from "./App";
 
@@ -42,11 +41,10 @@ const Wrapper = ({ children }) => {
         <style global jsx>
           {css}
         </style>
-        <FloatingButton></FloatingButton>
-        <Sidebar>{children}</Sidebar>
         <Header></Header>
         <Body></Body>
         <Footer></Footer>
+        <Sidebar>{children}</Sidebar>
       </App>
     </HelmetProvider>
   );
@@ -56,9 +54,26 @@ export default Wrapper;
 
 // ! always keep it simple
 
-/*
-TODO finish writing wrapper
-TODO remember page will shift when y scrollbar appears & disappears
-TODO module has been externalized error
-TODO redo enrollment frequency page quickly (keep it simple)
-*/
+/* wrapper todo list
+ * need floating button opacity to lower on small screen
+ * facebook, twitter, and instagram into footer from top of eku.edu
+ * add sidebar menu back
+ * add icon back to fullscreen option
+ * configure fullscreen (don't want to use bs modal anymore)
+ * finish footer (do we want to try a different bs example?)
+ * finish body (what should the padding be at each breakpoint? is there a bs example we can draw inspiration from?)
+ * fix jumpy collapse close (need gap to be removed between collapse button and the list)
+ * add color picker back and re-configure (should we still go with updating css variable because it prevents re-renders?)
+ * do we care about page shifting when scrollbar gets added to page?
+ * do we care about "module has been externalized" error when building the host?
+ */
+
+/* other
+ TODO do we want to quickly redo enrollment frequency page or just finish the latest solution?
+ TODO tuition discounts
+ TODO - fix broken functionalities
+ TODO - alternating row colors & less height on rows
+ TODO - option for default visible columns & default group by
+ TODO - take out "sum:"
+ TODO - format numbers
+ */
