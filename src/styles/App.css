@@ -143,6 +143,11 @@
     url(https://fonts.cdnfonts.com/s/16009/Poppins-BlackItalic.woff) format("woff");
 }
 
+html {
+  --body-background-color: white;
+  --footer-text-color: rgba(33, 37, 41, 0.75);
+}
+
 body {
   font-family: poppins, sans-serif;
   line-height: 1.5;
@@ -153,7 +158,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  background-color: #ffc107;
+  background-color: var(--body-background-color);
 }
 
 .logo {
@@ -338,6 +343,10 @@ body {
   color: rgba(255, 255, 255, 0.55);
 }
 
+.picker {
+  position: relative;
+}
+
 .swatch {
   width: 28px;
   height: 28px;
@@ -349,9 +358,22 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .py-md-header {
-    padding-top: 1.125rem !important;
-    padding-bottom: 1.125rem !important;
-  }
+.popover {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  border-radius: 9px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bg-picker {
+  background-color: var(--body-background-color);
+}
+
+.text-picker-contrast {
+  color: var(--footer-text-color);
+}
+
+.border-bottom-picker-contrast {
+  border-bottom: 1px solid var(--footer-text-color);
 }

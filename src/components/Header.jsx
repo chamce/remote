@@ -1,3 +1,8 @@
+import { useLayoutEffect } from "react";
+
+import { useLocalStorage } from "../hooks/useLocalStorage";
+import { ColorPicker } from "./ColorPicker";
+
 const handleSubmitSearch = (e) => {
   e.preventDefault();
   const searchInput = e.target[0];
@@ -6,7 +11,47 @@ const handleSubmitSearch = (e) => {
   window.open(url, "_blank");
 };
 
+const getColorContrast = (hexColor) => {
+  // If a leading # is provided, remove it
+  if (hexColor.slice(0, 1) === "#") {
+    hexColor = hexColor.slice(1);
+  }
+
+  // If a three-character hex code, make six-character
+  if (hexColor.length === 3) {
+    hexColor = hexColor
+      .split("")
+      .map(function (hex) {
+        return hex + hex;
+      })
+      .join("");
+  }
+
+  // Convert to RGB value
+  var r = parseInt(hexColor.substr(0, 2), 16);
+  var g = parseInt(hexColor.substr(2, 2), 16);
+  var b = parseInt(hexColor.substr(4, 2), 16);
+
+  // Get YIQ ratio
+  var yiq = (r * 299 + g * 587 + b * 114) / 1000;
+
+  // Check contrast
+  return yiq >= 128 ? "black" : "white";
+};
+
+const updateCssVariables = (color) => {
+  document.documentElement.style.setProperty("--body-background-color", color);
+  const footerColor = getColorContrast(color) === "black" ? "rgba(33, 37, 41, 0.75)" : "rgba(248, 249, 250, 0.75)";
+  document.documentElement.style.setProperty("--footer-text-color", footerColor);
+};
+
 const Header = () => {
+  const [color, setColor] = useLocalStorage("bodyBackgroundColor", "#ffe69c");
+
+  useLayoutEffect(() => {
+    updateCssVariables(color);
+  }, [color]);
+
   return (
     <nav
       className="z-2 navbar navbar-expand-lg navbar-dark box-shadow-2 bg-gradient py-3"
@@ -62,20 +107,17 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarsExample07">
           <ul className="navbar-nav ms-auto d-flex align-items-lg-center column-gap-3 row-gap-3" /*pt-3 pt-lg-0*/>
-            {/* <li className="nav-item d-flex">
-              <input
-                className="form-control form-control-color"
-                title="Choose your color"
-                defaultValue="#563d7c"
-                id="exampleColorInput"
-                type="color"
-              />
-            </li> */}
             <li className="nav-item d-flex">
-              <a className="nav-link p-0 text-nowrap fs-5 lh-1" href="/#">
+              <ColorPicker onChange={setColor} color={color}></ColorPicker>
+            </li>
+            {/* <li className="nav-item d-flex">
+              <a className="nav-link p-0 text-nowrap fs-5 lh-1 icon-link" href="/#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="1em">
+                  <path d="M344 0H488c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-87 87c-9.4 9.4-24.6 9.4-33.9 0l-32-32c-9.4-9.4-9.4-24.6 0-33.9l87-87L327 41c-6.9-6.9-8.9-17.2-5.2-26.2S334.3 0 344 0zM168 512H24c-13.3 0-24-10.7-24-24V344c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l39 39 87-87c9.4-9.4 24.6-9.4 33.9 0l32 32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39 39c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8z" />
+                </svg>
                 Fullscreen
               </a>
-            </li>
+            </li> */}
             <li className="nav-item d-flex">
               <a
                 className="nav-link p-0 text-nowrap fs-5 lh-1"
