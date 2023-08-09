@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 
 import { useEventListener } from "../hooks/useEventListener";
 
-const FloatingButton = () => {
+const FloatingButton = ({ offcanvasId }) => {
   const transition = "transform 0.15s ease-in-out";
   const [direction, setDirection] = useState("right");
 
@@ -15,9 +15,9 @@ const FloatingButton = () => {
   return (
     <button
       className="btn btn-eastern py-2 d-flex align-items-center justify-content-center box-shadow-6 bg-gradient rounded-circle"
-      data-bs-target="#offcanvasExample"
+      data-bs-target={"#" + offcanvasId}
       style={{ height: 56, width: 56 }}
-      aria-controls="offcanvasExample"
+      aria-controls={offcanvasId}
       data-bs-toggle="offcanvas"
       type="button"
     >
