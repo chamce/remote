@@ -8,7 +8,7 @@ const Sidebar = ({ children }) => {
       id="offcanvasExample"
       tabIndex={-1}
     >
-      <div className="vstack position-relative">
+      <div className="position-relative d-flex flex-column h-100">
         <div
           className="position-absolute top-50 start-100 visible ms-3 bd-mode-toggle"
           style={{ transform: "translateY(-50%)" }}
