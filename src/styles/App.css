@@ -253,7 +253,10 @@ body {
   border-bottom-right-radius: 6px;
   border-right: 1px solid #495057;
   border-bottom: 1px solid #495057;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);
+  box-shadow:
+    0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   transform: translate(-50%, -50%) rotate(45deg);
   background: linear-gradient(to right bottom, transparent 50%, #b3b3b3 0, #ffffff 27px, #666666);
 }
