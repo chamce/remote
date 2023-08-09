@@ -1,9 +1,9 @@
 import FloatingButton from "./FloatingButton";
 
-const Sidebar = ({ children }) => {
-  const offcanvasId = "ed96b0cf-b955-faa4-a5b0-31e1a270a25d";
-  const offcanvasLabelId = offcanvasId + "Label";
+const offcanvasId = "rcso49fnvs8ll3yh4710sjzfuvds4all3yh471b0qbtjukcojll3yh471";
+const offcanvasLabelId = offcanvasId + "Label";
 
+const Sidebar = ({ children }) => {
   return (
     <div className="offcanvas offcanvas-start" aria-labelledby={offcanvasLabelId} id={offcanvasId} tabIndex={-1}>
       <div className="position-relative d-flex flex-column h-100">
