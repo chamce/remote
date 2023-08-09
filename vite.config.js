@@ -34,5 +34,6 @@ export default defineConfig(({ mode }) => ({
     outDir: "docs",
   },
   define: mode === "production" ? { "process.env.NODE_ENV": '"production"' } : {},
+  server: { open: true },
   base: "",
 }));

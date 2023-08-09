@@ -55,6 +55,7 @@ export default Wrapper;
 // ! always keep it simple
 
 /* wrapper todo list
+ * floating button position & offcanvas body overflow seem to not be working correctly in host simple browser
  * need floating button opacity to lower on small screen
  * facebook, twitter, and instagram into footer from top of eku.edu
  * add sidebar menu back
@@ -69,11 +70,9 @@ export default Wrapper;
  */
 
 /* other
- TODO do we want to quickly redo enrollment frequency page or just finish the latest solution?
  TODO tuition discounts
  TODO - fix broken functionalities
- TODO - alternating row colors & less height on rows
  TODO - option for default visible columns & default group by
- TODO - take out "sum:"
- TODO - format numbers
+ TODO - right align numbers & number headers
+ TODO - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
  */

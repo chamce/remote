@@ -21,7 +21,7 @@ const Sidebar = ({ children }) => {
           </h5>
           <button data-bs-dismiss="offcanvas" className="btn-close" aria-label="Close" type="button" />
         </div>
-        <div className="offcanvas-body">
+        <div className="offcanvas-body overflow-auto">
           <div>{children}</div>
           <div className="dropdown mt-3">
             <button className="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" type="button">
