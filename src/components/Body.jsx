@@ -3,7 +3,7 @@ import Fold from "./Fold";
 const Body = ({ children }) => {
   return (
     <main className="container">
-      <div className="my-3 p-4 bg-body rounded box-shadow-1 position-relative">
+      <div className="my-3 p-3 p-sm-4 bg-body rounded box-shadow-2 position-relative">
         <Fold></Fold>
         {children}
         {/* <h6 className="border-bottom pb-2 mb-0">Recent updates</h6>

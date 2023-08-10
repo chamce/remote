@@ -14,7 +14,7 @@ const FloatingButton = ({ offcanvasId }) => {
 
   return (
     <button
-      className="btn btn-eastern py-2 d-flex align-items-center justify-content-center box-shadow-6 bg-gradient rounded-circle"
+      className="btn btn-eastern-maroon py-2 d-flex align-items-center justify-content-center box-shadow-6 bg-gradient rounded-circle"
       data-bs-target={"#" + offcanvasId}
       style={{ height: 56, width: 56 }}
       aria-controls={offcanvasId}

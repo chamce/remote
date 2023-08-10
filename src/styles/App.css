@@ -238,12 +238,12 @@ body {
   z-index: 1500;
 }
 
-.fold {
+.folded-corner {
   width: 3.2em;
   height: 1.35em;
 }
 
-.fold::after {
+.folded-corner::after {
   top: 50%;
   left: 50%;
   content: "";
@@ -261,25 +261,19 @@ body {
   background: linear-gradient(to right bottom, transparent 50%, #b3b3b3 0, #ffffff 27px, #666666);
 }
 
-.fold-hypotenuse {
+.folded-corner > .hypotenuse {
   width: 55.7px;
   transform: rotate(-22.874deg);
   transform-origin: bottom right;
   box-shadow:
-    0px 2px 1px -1px rgba(0, 0, 0, 0.2) inset,
-    0px 1px 1px 0px rgba(0, 0, 0, 0.14) inset,
-    0px 1px 3px 0px rgba(0, 0, 0, 0.12) inset;
+    0px 3px 1px -2px rgba(0, 0, 0, 0.2) inset,
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14) inset,
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12) inset;
 }
 
-.rotated-90-to-the-left {
+.rotate-negative-90-bottom-left {
   transform: rotate(-90deg);
   transform-origin: bottom left;
-}
-
-.hypotenuse-shadow-cover {
-  width: 55.7px;
-  transform-origin: bottom right;
-  transform: rotate(-22.874deg) translateY(-50%);
 }
 
 .box-shadow-1 {
@@ -303,7 +297,7 @@ body {
     rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
 }
 
-.btn-eastern {
+.btn-eastern-maroon {
   --bs-btn-color: #ffffff;
   --bs-btn-bg: #611f34;
   --bs-btn-border-color: #611f34;
@@ -320,7 +314,11 @@ body {
   --bs-btn-disabled-border-color: #611f34;
 }
 
-.form-control-eastern {
+.bg-eastern-maroon {
+  background-color: #611f34;
+}
+
+.form-control-eastern-maroon {
   border: 1px solid transparent;
   box-shadow:
     rgba(9, 30, 66, 0.25) 0px 1px 1px inset,
@@ -336,13 +334,13 @@ body {
   background-image: url('data:image/svg+xml,<svg fill="white" fill-opacity="0.55" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>');
 }
 
-.form-control-eastern,
-.form-control-eastern:focus {
+.form-control-eastern-maroon,
+.form-control-eastern-maroon:focus {
   background-color: #611f34;
   color: #f8f9fa;
 }
 
-.form-control-eastern::placeholder {
+.form-control-eastern-maroon::placeholder {
   color: rgba(255, 255, 255, 0.55);
 }
 
@@ -373,10 +371,10 @@ body {
   background-color: var(--body-background-color);
 }
 
-.text-picker-contrast {
+.text-picker-opposite {
   color: var(--footer-text-color);
 }
 
-.border-bottom-picker-contrast {
+.border-bottom-picker-opposite {
   border-bottom: 1px solid var(--footer-text-color);
 }

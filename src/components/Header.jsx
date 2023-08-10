@@ -54,8 +54,7 @@ const Header = () => {
 
   return (
     <nav
-      className="z-2 navbar navbar-expand-lg navbar-dark box-shadow-2 bg-gradient py-3"
-      style={{ backgroundColor: "#611f34" }}
+      className="z-2 navbar navbar-expand-lg navbar-dark box-shadow-2 bg-eastern-maroon bg-gradient py-3"
       aria-label="Eighth navbar example"
     >
       <div className="container column-gap-3 row-gap-3 px-3">
@@ -131,7 +130,7 @@ const Header = () => {
             <li className="nav-item">
               <form onSubmit={handleSubmitSearch} autoComplete="off" role="search">
                 <input
-                  className="form-control form-control-eastern fs-5 form-control-shadow"
+                  className="form-control form-control-eastern-maroon fs-5 form-control-shadow"
                   placeholder="Search Eastern"
                   aria-label="Search"
                   type="search"
