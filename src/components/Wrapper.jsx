@@ -42,9 +42,9 @@ const Wrapper = ({ children }) => {
           {css}
         </style>
         <Header></Header>
-        <Body></Body>
+        <Body>{children}</Body>
         <Footer></Footer>
-        <Sidebar>{children}</Sidebar>
+        <Sidebar></Sidebar>
       </App>
     </HelmetProvider>
   );
@@ -74,5 +74,4 @@ export default Wrapper;
  TODO - fix broken functionalities
  TODO - option for default visible columns & default group by
  TODO - right align numbers & number headers
- TODO - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
  */

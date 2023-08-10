@@ -5,7 +5,8 @@ const Body = ({ children }) => {
     <main className="container">
       <div className="my-3 p-3 bg-body rounded box-shadow-1 position-relative">
         <Fold></Fold>
-        <h6 className="border-bottom pb-2 mb-0">Recent updates</h6>
+        {children}
+        {/* <h6 className="border-bottom pb-2 mb-0">Recent updates</h6>
         <div className="d-flex text-body-secondary pt-3">
           <svg
             className="bd-placeholder-img flex-shrink-0 me-2 rounded"
@@ -74,31 +75,9 @@ const Body = ({ children }) => {
             really want to highlight this in the recent updates.
           </p>
         </div>
-        {/* <div className="d-flex text-body-secondary pt-3">
-          <svg
-            className="bd-placeholder-img flex-shrink-0 me-2 rounded"
-            preserveAspectRatio="xMidYMid slice"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 32x32"
-            focusable="false"
-            height={32}
-            role="img"
-            width={32}
-          >
-            <title>Placeholder</title>
-            <rect fill="orange" height="100%" width="100%" />
-            <text fill="orange" dy=".3em" y="50%" x="50%">
-              32x32
-            </text>
-          </svg>
-          <p className="pb-3 mb-0 small lh-sm border-bottom">
-            <strong className="d-block text-gray-dark">@username</strong>
-            {children}
-          </p>
-        </div> */}
         <small className="d-block text-end mt-3">
           <a href="/#">All updates</a>
-        </small>
+        </small> */}
       </div>
     </main>
   );
