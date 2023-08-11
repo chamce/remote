@@ -6,78 +6,102 @@ const Body = ({ children }) => {
       <div className="my-3 p-3 p-sm-4 bg-body rounded box-shadow-2 position-relative">
         <Fold></Fold>
         {children}
-        {/* <h6 className="border-bottom pb-2 mb-0">Recent updates</h6>
-        <div className="d-flex text-body-secondary pt-3">
-          <svg
-            className="bd-placeholder-img flex-shrink-0 me-2 rounded"
-            preserveAspectRatio="xMidYMid slice"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 32x32"
-            focusable="false"
-            height={32}
-            role="img"
-            width={32}
-          >
-            <title>Placeholder</title>
-            <rect fill="#007bff" height="100%" width="100%" />
-            <text fill="#007bff" dy=".3em" y="50%" x="50%">
-              32x32
-            </text>
-          </svg>
-          <p className="pb-3 mb-0 small lh-sm border-bottom">
-            <strong className="d-block text-gray-dark">@username</strong>
-            Some representative placeholder content, with some information about this user. Imagine this being some sort
-            of status update, perhaps?
-          </p>
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                data-bs-target="#collapseOne"
+                className="accordion-button"
+                aria-controls="collapseOne"
+                data-bs-toggle="collapse"
+                aria-expanded="true"
+                type="button"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div className="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne">
+              <div className="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                data-bs-target="#collapseTwo"
+                aria-controls="collapseTwo"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                type="button"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div className="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
+              <div className="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="d-flex text-body-secondary pt-3">
-          <svg
-            className="bd-placeholder-img flex-shrink-0 me-2 rounded"
-            preserveAspectRatio="xMidYMid slice"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 32x32"
-            focusable="false"
-            height={32}
-            role="img"
-            width={32}
-          >
-            <title>Placeholder</title>
-            <rect fill="#e83e8c" height="100%" width="100%" />
-            <text fill="#e83e8c" dy=".3em" y="50%" x="50%">
-              32x32
-            </text>
-          </svg>
-          <p className="pb-3 mb-0 small lh-sm border-bottom">
-            <strong className="d-block text-gray-dark">@username</strong>
-            Some more representative placeholder content, related to this other user. Another status update, perhaps.
-          </p>
+        <div className="accordion" id="accordionExample">
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                data-bs-target="#collapseOne"
+                className="accordion-button"
+                aria-controls="collapseOne"
+                data-bs-toggle="collapse"
+                aria-expanded="true"
+                type="button"
+              >
+                Accordion Item #1
+              </button>
+            </h2>
+            <div className="accordion-collapse collapse show" data-bs-parent="#accordionExample" id="collapseOne">
+              <div className="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div className="accordion-item">
+            <h2 className="accordion-header">
+              <button
+                className="accordion-button collapsed"
+                data-bs-target="#collapseTwo"
+                aria-controls="collapseTwo"
+                data-bs-toggle="collapse"
+                aria-expanded="false"
+                type="button"
+              >
+                Accordion Item #2
+              </button>
+            </h2>
+            <div className="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
+              <div className="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="d-flex text-body-secondary pt-3">
-          <svg
-            className="bd-placeholder-img flex-shrink-0 me-2 rounded"
-            preserveAspectRatio="xMidYMid slice"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-label="Placeholder: 32x32"
-            focusable="false"
-            height={32}
-            role="img"
-            width={32}
-          >
-            <title>Placeholder</title>
-            <rect fill="#6f42c1" height="100%" width="100%" />
-            <text fill="#6f42c1" dy=".3em" y="50%" x="50%">
-              32x32
-            </text>
-          </svg>
-          <p className="pb-3 mb-0 small lh-sm border-bottom">
-            <strong className="d-block text-gray-dark">@username</strong>
-            This user also gets some representative placeholder content. Maybe they did something interesting, and you
-            really want to highlight this in the recent updates.
-          </p>
-        </div>
-        <small className="d-block text-end mt-3">
-          <a href="/#">All updates</a>
-        </small> */}
       </div>
     </main>
   );

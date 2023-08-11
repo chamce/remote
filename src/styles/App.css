@@ -149,6 +149,7 @@ html {
 }
 
 body {
+  overflow-y: scroll;
   font-family: poppins, sans-serif;
   line-height: 1.5;
   font-weight: 400;
