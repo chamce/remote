@@ -285,7 +285,7 @@ body {\r
     0px 4px 5px 0px rgba(0, 0, 0, 0.14),\r
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);\r
   transform: translate(-50%, -50%) rotate(45deg);\r
-  background: linear-gradient(to right bottom, transparent 50%, #cccccc 0, #ffffff 27px, #666666);\r
+  background: linear-gradient(to right bottom, transparent 50%, #cccccc 0, #ffffff 27px, #808080);\r
 }\r
 \r
 .folded-corner > .hypotenuse {\r
