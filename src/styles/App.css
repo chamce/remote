@@ -259,7 +259,7 @@ body {
     0px 4px 5px 0px rgba(0, 0, 0, 0.14),
     0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   transform: translate(-50%, -50%) rotate(45deg);
-  background: linear-gradient(to right bottom, transparent 50%, #b3b3b3 0, #ffffff 27px, #666666);
+  background: linear-gradient(to right bottom, transparent 50%, #cccccc 0, #ffffff 27px, #666666);
 }
 
 .folded-corner > .hypotenuse {
@@ -267,9 +267,9 @@ body {
   transform: rotate(-22.874deg);
   transform-origin: bottom right;
   box-shadow:
-    0px 3px 1px -2px rgba(0, 0, 0, 0.2) inset,
-    0px 2px 2px 0px rgba(0, 0, 0, 0.14) inset,
-    0px 1px 5px 0px rgba(0, 0, 0, 0.12) inset;
+    0px 3px 3px -2px rgba(0, 0, 0, 0.2) inset,
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14) inset,
+    0px 1px 8px 0px rgba(0, 0, 0, 0.12) inset;
 }
 
 .rotate-negative-90-bottom-left {
