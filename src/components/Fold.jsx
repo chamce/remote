@@ -7,7 +7,7 @@ const Fold = () => {
         </div>
         <div className="z-1 h-100 w-100 position-absolute bottom-100 end-0 bg-picker" id="above-corner"></div>
         <div
-          className="z-1 h-100 w-100 position-absolute rotate-negative-90-bottom-left bg-picker rounded-bottom"
+          className="z-1 h-100 w-100 position-absolute rotate-negative-90-bottom-left bg-picker box-shadow-picker"
           id="left-of-corner"
         ></div>
       </div>
