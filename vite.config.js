@@ -31,7 +31,7 @@ export default defineConfig(({ mode }) => ({
       fileName: "remote",
       formats: ["cjs"],
     },
-    outDir: "docs",
+    outDir: "dist",
   },
   define: mode === "production" ? { "process.env.NODE_ENV": '"production"' } : {},
   server: { open: true },
