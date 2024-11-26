@@ -3,7 +3,7 @@ import { HelmetProvider, Helmet } from "react-helmet-async";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import appCss from "../styles/App.css?raw";
-import Sidebar from "./Sidebar";
+// import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import Header from "./Header";
 import Body from "./Body";
@@ -44,7 +44,7 @@ const Wrapper = ({ children }) => {
         <Header></Header>
         <Body>{children}</Body>
         <Footer></Footer>
-        <Sidebar></Sidebar>
+        {/* <Sidebar></Sidebar> */}
       </App>
     </HelmetProvider>
   );

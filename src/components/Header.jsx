@@ -3,13 +3,13 @@ import { useLayoutEffect } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { ColorPicker } from "./ColorPicker";
 
-const handleSubmitSearch = (e) => {
-  e.preventDefault();
-  const searchInput = e.target[0];
-  const string = searchInput.value;
-  const url = `https://www.eku.edu/search/?q=${string}#gsc.tab=0&gsc.q=${string}&gsc.page=1`;
-  window.open(url, "_blank");
-};
+// const handleSubmitSearch = (e) => {
+//   e.preventDefault();
+//   const searchInput = e.target[0];
+//   const string = searchInput.value;
+//   const url = `https://www.eku.edu/search/?q=${string}#gsc.tab=0&gsc.q=${string}&gsc.page=1`;
+//   window.open(url, "_blank");
+// };
 
 const getColorContrast = (hexColor) => {
   // If a leading # is provided, remove it
@@ -84,7 +84,7 @@ const Header = () => {
             <div className="lh-sm">
               <a
                 className="text-decoration-none link-light text-wrap fs-4"
-                href="https://ir.eku.edu/"
+                href="https://irserver.eku.edu/reports/datapage/"
                 rel="noreferrer"
                 target="_blank"
               >
@@ -109,14 +109,6 @@ const Header = () => {
             <li className="nav-item d-flex">
               <ColorPicker onChange={setColor} color={color}></ColorPicker>
             </li>
-            {/* <li className="nav-item d-flex">
-              <a className="nav-link p-0 text-nowrap fs-5 lh-1 icon-link" href="/#">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="1em">
-                  <path d="M344 0H488c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-87 87c-9.4 9.4-24.6 9.4-33.9 0l-32-32c-9.4-9.4-9.4-24.6 0-33.9l87-87L327 41c-6.9-6.9-8.9-17.2-5.2-26.2S334.3 0 344 0zM168 512H24c-13.3 0-24-10.7-24-24V344c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l39 39 87-87c9.4-9.4 24.6-9.4 33.9 0l32 32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39 39c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8z" />
-                </svg>
-                Fullscreen
-              </a>
-            </li> */}
             <li className="nav-item d-flex">
               <a
                 className="nav-link p-0 text-nowrap fs-5 lh-1"
@@ -127,7 +119,16 @@ const Header = () => {
                 A-Z Index
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item d-flex">
+              <a className="nav-link p-0 text-nowrap fs-5 lh-1 icon-link" href="/#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="1em">
+                  <path d="M344 0H488c13.3 0 24 10.7 24 24V168c0 9.7-5.8 18.5-14.8 22.2s-19.3 1.7-26.2-5.2l-39-39-87 87c-9.4 9.4-24.6 9.4-33.9 0l-32-32c-9.4-9.4-9.4-24.6 0-33.9l87-87L327 41c-6.9-6.9-8.9-17.2-5.2-26.2S334.3 0 344 0zM168 512H24c-13.3 0-24-10.7-24-24V344c0-9.7 5.8-18.5 14.8-22.2s19.3-1.7 26.2 5.2l39 39 87-87c9.4-9.4 24.6-9.4 33.9 0l32 32c9.4 9.4 9.4 24.6 0 33.9l-87 87 39 39c6.9 6.9 8.9 17.2 5.2 26.2s-12.5 14.8-22.2 14.8z" />
+                </svg>
+                Fullscreen
+              </a>
+            </li> */}
+
+            {/* <li className="nav-item">
               <form onSubmit={handleSubmitSearch} autoComplete="off" role="search">
                 <input
                   className="form-control form-control-eastern-maroon fs-5 form-control-shadow"
@@ -136,7 +137,7 @@ const Header = () => {
                   type="search"
                 />
               </form>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
