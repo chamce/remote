@@ -389,7 +389,7 @@ body {\r
 .popover {\r
   position: absolute;\r
   top: calc(100% + 2px);\r
-  left: 0;\r
+  right: 0;\r
   border-radius: 9px;\r
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);\r
 }\r
