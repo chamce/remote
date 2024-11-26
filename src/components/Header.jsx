@@ -109,7 +109,7 @@ const Header = () => {
             <li className="nav-item d-flex">
               <ColorPicker onChange={setColor} color={color}></ColorPicker>
             </li>
-            <li className="nav-item d-flex">
+            {/* <li className="nav-item d-flex">
               <a
                 className="nav-link p-0 text-nowrap fs-5 lh-1"
                 href="https://tools.eku.edu/siteindex/a"
@@ -118,7 +118,7 @@ const Header = () => {
               >
                 A-Z Index
               </a>
-            </li>
+            </li> */}
             {/* <li className="nav-item d-flex">
               <a className="nav-link p-0 text-nowrap fs-5 lh-1 icon-link" href="/#">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" height="1em">
