@@ -2,14 +2,18 @@ import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css?raw";
 import { HelmetProvider, Helmet } from "react-helmet-async";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
+import ekuCss from "../styles/eku.css?raw";
 import appCss from "../styles/App.css?raw";
+import { MainFooter } from "./MainFooter";
+import { MainHeader } from "./MainHeader";
+import { TopHeader } from "./TopHeader";
 // import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import Header from "./Header";
 import Body from "./Body";
 import App from "./App";
 
-const css = bootstrapCss + appCss;
+const css = bootstrapCss + appCss + ekuCss;
 
 const Wrapper = ({ children }) => {
   return (
@@ -41,9 +45,15 @@ const Wrapper = ({ children }) => {
         <style global jsx>
           {css}
         </style>
-        <Header></Header>
-        <Body>{children}</Body>
-        <Footer></Footer>
+        {/* <Header></Header> */}
+        <TopHeader></TopHeader>
+        {/* <MainHeader></MainHeader> */}
+        <div className="bg-white">
+          <Body>{children}</Body>
+        </div>
+
+        <MainFooter></MainFooter>
+        {/* <Footer></Footer> */}
         {/* <Sidebar></Sidebar> */}
       </App>
     </HelmetProvider>

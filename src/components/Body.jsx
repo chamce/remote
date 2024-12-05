@@ -1,11 +1,10 @@
 import Fold from "./Fold";
 
 const Body = ({ children }) => {
-  console.log(window);
   return (
-    <main className="container">
-      <div className="my-3 p-3 p-sm-4 bg-body rounded box-shadow-2 position-relative">
-        <Fold></Fold>
+    <main className="container py-3">
+      <div className="p-3 bg-body rounded box-shadow">
+        {/* <Fold></Fold> */}
         {children}
       </div>
     </main>

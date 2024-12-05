@@ -6,7 +6,7 @@ import Wrapper from "./components/Wrapper";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Wrapper>
-      <h1>Chance Whitaker</h1>
+      <div className="display-6">Main content goes here</div>
     </Wrapper>
   </React.StrictMode>,
 );
