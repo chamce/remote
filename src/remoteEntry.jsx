@@ -1,3 +1,3 @@
-import Wrapper from "./components/Wrapper";
+import Wrapper from "./Wrapper";
 
 export default Wrapper;

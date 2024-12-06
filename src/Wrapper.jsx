@@ -1,24 +1,16 @@
 import bootstrapCss from "bootstrap/dist/css/bootstrap.min.css?raw";
 import { HelmetProvider, Helmet } from "react-helmet-async";
-import "bootstrap/dist/js/bootstrap.bundle.min";
+// import "bootstrap/dist/js/bootstrap.bundle.min";
 
-import ekuCss from "../styles/eku.css?raw";
-import appCss from "../styles/App.css?raw";
-import { MainFooter } from "./MainFooter";
-import { MainHeader } from "./MainHeader";
-import { TopHeader } from "./TopHeader";
-// import Sidebar from "./Sidebar";
-import Footer from "./Footer";
-import Header from "./Header";
-import Body from "./Body";
-import App from "./App";
+import appCss from "./styles/App.css?raw";
+import { App } from "./App";
 
-const css = bootstrapCss + appCss + ekuCss;
+const css = bootstrapCss + appCss;
 
 const Wrapper = ({ children }) => {
   return (
     <HelmetProvider>
-      <App>
+      <>
         <Helmet>
           <link
             href="https://chamce.github.io/favicons/apple-touch-icon.png"
@@ -45,17 +37,8 @@ const Wrapper = ({ children }) => {
         <style global jsx>
           {css}
         </style>
-        {/* <Header></Header> */}
-        <TopHeader></TopHeader>
-        {/* <MainHeader></MainHeader> */}
-        <div className="bg-white">
-          <Body>{children}</Body>
-        </div>
-
-        <MainFooter></MainFooter>
-        {/* <Footer></Footer> */}
-        {/* <Sidebar></Sidebar> */}
-      </App>
+        <App>{children}</App>
+      </>
     </HelmetProvider>
   );
 };
