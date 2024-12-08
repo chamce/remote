@@ -2001,4 +2001,5 @@ a:where(:not(.wp-element-button)) {
 :root,
 [data-bs-theme="light"] {
   --bs-primary-rgb: 134, 31, 65;
+  --bs-font-sans-serif: "Poppins", sans-serif;
 }

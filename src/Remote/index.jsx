@@ -9,8 +9,7 @@ import { Footer } from "./components/Footer";
 import { Body } from "./styles/Body";
 
 // header functionality needs to work
-// offcanvas sidebar should always show (maybe make bottom column when wrap occurs)
-// fix sidebar links & add header to first nav links list
+// offcanvas sidebar should always show (maybe below dashboard on wrap)
 // do you need a way to control padding around dashboard?
 
 export default function Remote(props) {
