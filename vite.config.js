@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => ({
       output: { exports: "named" },
     },
     lib: {
-      entry: resolve(__dirname, "src/remoteEntry.jsx"),
+      entry: resolve(__dirname, "src/Remote/index.jsx"),
       fileName: "remote",
       formats: ["cjs"],
     },
