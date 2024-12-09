@@ -168,10 +168,12 @@ export const defaultProps = {
   ),
   renderer: ({ children, toolbar, heading }) => (
     <>
-      <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 border-bottom">
-        <h1 className="h2">{heading}</h1>
-        <div className="btn-toolbar mb-2 mb-md-0">{toolbar}</div>
-      </div>
+      {(heading || toolbar) && (
+        <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 border-bottom">
+          <h1 className="h2">{heading}</h1>
+          <div className="btn-toolbar mb-2 mb-md-0">{toolbar}</div>
+        </div>
+      )}
       {children}
     </>
   ),
