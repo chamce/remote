@@ -9,7 +9,6 @@ import { Footer } from "./components/Footer";
 import { Body } from "./styles/Body";
 
 // header functionality needs to work
-// offcanvas sidebar should always show (maybe below dashboard on wrap)
 // do you need a way to control padding around dashboard?
 
 export default function Remote(props) {
@@ -41,7 +40,7 @@ export default function Remote(props) {
       <Body>
         <Header></Header>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row flex-wrap-reverse">
             <Sidebar></Sidebar>
             <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-3">
               <Dashboard {...props}></Dashboard>

@@ -3,25 +3,15 @@ import { lists } from "./lists";
 
 export const Sidebar = () => {
   return (
-    <div className="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
-      <div
-        className="offcanvas-sm offcanvas-end bg-body-tertiary"
-        aria-labelledby="sidebarMenuLabel"
-        id="sidebarMenu"
-        tabIndex={-1}
-      >
-        <div className="offcanvas-header">
-          <h5 className="offcanvas-title" id="sidebarMenuLabel">
-            Company name
-          </h5>
-          <button
-            data-bs-target="#sidebarMenu"
-            data-bs-dismiss="offcanvas"
-            className="btn-close"
-            aria-label="Close"
-            type="button"
-          />
-        </div>
+    <div className="sidebar col-md-3 col-lg-2 p-0 bg-body-tertiary material-shadow-lg shadow-none-max-md">
+      <div className="flex w-full d-md-none">
+        <div className="bg-eku-maroon w-1/5 h-3" />
+        <div className="bg-goldenrod-yellow w-1/5 h-3" />
+        <div className="bg-autumn-orange w-1/5 h-3" />
+        <div className="bg-kentucky-bluegrass w-1/5 h-3" />
+        <div className="bg-boone-bronze w-1/5 h-3" />
+      </div>
+      <div aria-labelledby="sidebarMenuLabel" className="bg-body-tertiary" id="sidebarMenu" tabIndex={-1}>
         <div className="offcanvas-body d-md-flex flex-column p-0 py-lg-3 overflow-y-auto">
           <div className="vstack gap-3">
             {lists.map(({ heading, items }) => (
