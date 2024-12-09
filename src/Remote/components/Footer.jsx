@@ -1,35 +1,32 @@
+import { Banner } from "./Banner";
+
 export const Footer = () => {
   return (
-    <footer className="bg-dark-gray text-white w-full">
-      <div className="flex w-full">
-        <div className="bg-eku-maroon w-1/5 h-3" />
-        <div className="bg-goldenrod-yellow w-1/5 h-3" />
-        <div className="bg-autumn-orange w-1/5 h-3" />
-        <div className="bg-kentucky-bluegrass w-1/5 h-3" />
-        <div className="bg-boone-bronze w-1/5 h-3" />
-      </div>
-      <div className="px-6 lg:px-12 xl:mx-auto">
-        <div className="mt-16 pb-6 flex justify-between lg:items-center xl:container xl:mx-auto">
+    <footer className="bg-dark-gray text-white w-full material-shadow-lg">
+      <Banner></Banner>
+      <div className="px-6 lg:px-12 mx-xl-auto">
+        <div className="mt-16 pb-6 flex justify-between align-items-lg-center container-xl mx-xl-auto">
           <div className="w-full">
-            <div className="flex flex-wrap justify-between items-start gap-12 md:flex-nowrap md:gap-16 lg:gap-24">
+            <div className="flex flex-wrap justify-between items-start gap-12 flex-md-nowrap md:gap-16 lg:gap-24">
               {/* Logo */}
               {/* Logo */}
-              <div className="w-full md:w-fit mb-8 text-center md:text-left">
+              <div className="w-full md:w-fit mb-8 text-center md:text-left text-md-start">
                 <div className="mb-6">
-                  <a className="inline-block mx-auto md:mx-0" href="/">
+                  <a className="inline-block mx-auto mx-md-0" href="/">
                     <img
                       src="https://2025.eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-white.svg"
-                      className="mx-auto md:mx-0"
+                      className="mx-auto mx-md-0"
                       width={150}
+                      alt="eku"
                     />
                   </a>
                 </div>
-                <address className="xl:text-lg text-sm mb-6 leading-normal not-italic text-center md:text-left">
+                <address className="xl:text-lg text-sm mb-6 leading-normal not-italic text-center md:text-left text-md-start">
                   521 Lancaster Ave.
                   <br />
                   Richmond, KY 40475
                 </address>
-                <div className="flex flex-row justify-center md:justify-start space-x-4">
+                <div className="flex flex-row justify-center justify-content-md-start space-x-4">
                   <a href="https://facebook.com" aria-label="Facebook" rel="noreferrer" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -97,7 +94,7 @@ export const Footer = () => {
                 </div>
               </div>
               {/* Navigation Menus */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-items-start mx-auto max-w-lg md:max-w-full md:mx-0">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 justify-items-start mx-auto max-w-lg md:max-w-full mx-md-0">
                 {/* About Menu */}
                 <div className="w-full mb-8">
                   <h2 className="font-bold xl:text-2xl text-lg mb-4">About</h2>
@@ -210,12 +207,16 @@ export const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="px-6 text-center md:text-left md:px-0 mt-3 text-sm font-extralight">
+            <div className="px-6 text-center md:text-left text-md-start px-md-0 mt-3 text-sm font-extralight">
               <span>© 2024 All rights reserved Eastern Kentucky University</span>
               <span className="mx-1.5">|</span>
-              <a className="link">Equal Opportunity Statement</a>
+              <a className="link" href="/">
+                Equal Opportunity Statement
+              </a>
               <span className="mx-1.5">|</span>
-              <a className="link">Privacy Statement</a>
+              <a className="link" href="/">
+                Privacy Statement
+              </a>
             </div>
           </div>
         </div>

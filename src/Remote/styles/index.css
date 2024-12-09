@@ -127,8 +127,8 @@
   --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
 }
 :root {
-  --wp--style--global--content-size: 960px;
-  --wp--style--global--wide-size: 1280px;
+  --wp--style--global--content-size: 992px;
+  --wp--style--global--wide-size: 1200px;
 }
 :where(body) {
   margin: 0;
@@ -996,7 +996,7 @@ a:where(:not(.wp-element-button)) {
       height 0.3s ease-in-out;
     width: 100%;
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     .xl\:container {
       width: 100%;
       padding-right: 1rem;
@@ -1007,33 +1007,33 @@ a:where(:not(.wp-element-button)) {
         max-width: 480px;
       }
     }
-    @media (min-width: 600px) {
+    @media (min-width: 576px) {
       .xl\:container {
-        max-width: 600px;
+        max-width: 576px;
         padding-right: 2rem;
         padding-left: 2rem;
       }
     }
-    @media (min-width: 782px) {
+    @media (min-width: 768px) {
       .xl\:container {
-        max-width: 782px;
+        max-width: 768px;
       }
     }
-    @media (min-width: 960px) {
+    @media (min-width: 992px) {
       .xl\:container {
-        max-width: 960px;
+        max-width: 992px;
         padding-right: 0rem;
         padding-left: 0rem;
       }
     }
-    @media (min-width: 1280px) {
+    @media (min-width: 1200px) {
       .xl\:container {
-        max-width: 1280px;
+        max-width: 1200px;
       }
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 1400px) {
       .xl\:container {
-        max-width: 1440px;
+        max-width: 1400px;
       }
     }
   }
@@ -1049,7 +1049,7 @@ a:where(:not(.wp-element-button)) {
     --tw-text-opacity: 1;
     color: rgb(0 0 0 / var(--tw-text-opacity));
   }
-  @media (min-width: 782px) {
+  @media (min-width: 768px) {
     .md\:mx-0 {
       margin-left: 0px;
       margin-right: 0px;
@@ -1084,7 +1084,7 @@ a:where(:not(.wp-element-button)) {
       display: none;
     }
   }
-  @media (min-width: 960px) {
+  @media (min-width: 992px) {
     .lg\:block {
       display: block;
     }
@@ -1114,7 +1114,7 @@ a:where(:not(.wp-element-button)) {
       display: none;
     }
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 1200px) {
     .xl\:mx-auto {
       margin-left: auto;
       margin-right: auto;
@@ -1361,7 +1361,7 @@ a:where(:not(.wp-element-button)) {
   padding-bottom: 0px;
   grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .kb-row-layout-id20835_17cf13-6d > .kt-row-column-wrap {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1378,12 +1378,12 @@ a:where(:not(.wp-element-button)) {
 .kadence-column20835_371e0f-7f > .kt-inside-inner-col {
   flex-direction: column;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991.98px) {
   .kadence-column20835_371e0f-7f > .kt-inside-inner-col {
     flex-direction: column;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .kadence-column20835_371e0f-7f > .kt-inside-inner-col {
     flex-direction: column;
   }
@@ -1403,12 +1403,12 @@ a:where(:not(.wp-element-button)) {
 .kadence-column20835_5d50c3-b5 a:hover {
   color: #861f41;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991.98px) {
   .kadence-column20835_5d50c3-b5 > .kt-inside-inner-col {
     flex-direction: column;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .kadence-column20835_5d50c3-b5 > .kt-inside-inner-col {
     flex-direction: column;
   }
@@ -1442,7 +1442,7 @@ a:where(:not(.wp-element-button)) {
   border-bottom: 1px solid #87909a;
   border-left: 1px solid #87909a;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991.98px) {
   .wp-block-kadence-advancedbtn .kb-btn20835_b0d975-f0.kb-button {
     border-top: 1px solid #881f41;
     border-right: 1px solid #881f41;
@@ -1450,7 +1450,7 @@ a:where(:not(.wp-element-button)) {
     border-left: 1px solid #881f41;
   }
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991.98px) {
   .wp-block-kadence-advancedbtn .kb-btn20835_b0d975-f0.kb-button:hover,
   .wp-block-kadence-advancedbtn .kb-btn20835_b0d975-f0.kb-button:focus {
     border-top: 1px solid #87909a;
@@ -1459,7 +1459,7 @@ a:where(:not(.wp-element-button)) {
     border-left: 1px solid #87909a;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .wp-block-kadence-advancedbtn .kb-btn20835_b0d975-f0.kb-button {
     border-top: 1px solid #881f41;
     border-right: 1px solid #881f41;
@@ -1483,12 +1483,12 @@ a:where(:not(.wp-element-button)) {
 .kadence-column20835_9f628c-bc > .kt-inside-inner-col > .aligncenter {
   width: 100%;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991.98px) {
   .kadence-column20835_9f628c-bc > .kt-inside-inner-col {
     flex-direction: column;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .kadence-column20835_9f628c-bc > .kt-inside-inner-col {
     flex-direction: column;
   }
@@ -1533,7 +1533,7 @@ a:where(:not(.wp-element-button)) {
   padding-bottom: var(--global-kb-row-default-bottom, var(--global-kb-spacing-sm, 1.5rem));
   grid-template-columns: minmax(0, 1fr);
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .kb-row-layout-id20835_ed71db-ef > .kt-row-column-wrap {
     grid-template-columns: minmax(0, 1fr);
   }
@@ -1544,12 +1544,12 @@ a:where(:not(.wp-element-button)) {
 .kadence-column20835_bdcbb9-63 > .kt-inside-inner-col {
   flex-direction: column;
 }
-@media all and (max-width: 1024px) {
+@media all and (max-width: 991.98px) {
   .kadence-column20835_bdcbb9-63 > .kt-inside-inner-col {
     flex-direction: column;
   }
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767.98px) {
   .kadence-column20835_bdcbb9-63 > .kt-inside-inner-col {
     flex-direction: column;
   }
@@ -2035,5 +2035,8 @@ a:where(:not(.wp-element-button)) {
   }
   .border-top-max-md {
     border-top: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  }
+  .h-0-max-md > .h-3 {
+    height: 0;
   }
 }

@@ -1,9 +1,9 @@
 export const Header = () => {
   return (
-    <div style={{ zIndex: 998 }} className="w-full" id="header-group">
-      <header className="tw-hidden lg:block" id="top-bar-nav">
+    <div className="w-full material-shadow-lg" style={{ zIndex: 998 }} id="header-group">
+      <header className="tw-hidden d-lg-block" id="top-bar-nav">
         <div className="navbar bg-primary text-white text-sm font-light flex items-center min-h-10 lg:px-12">
-          <div className="flex justify-between w-full xl:container xl:mx-auto">
+          <div className="flex justify-between w-full container-xl mx-xl-auto">
             {/* Left side */}
             <div>
               <span>Eastern Kentucky University</span>
@@ -56,9 +56,9 @@ export const Header = () => {
           </div>
         </div>
       </header>
-      <header className="bg-white shadow-md tw-hidden lg:block" id="primary-nav">
-        <div className="xl:mx-auto lg:px-12">
-          <div className="flex justify-between lg:items-center xl:container py-6 xl:mx-auto w-full">
+      <header className="bg-white tw-hidden d-lg-block" id="primary-nav">
+        <div className="mx-xl-auto lg:px-12">
+          <div className="flex justify-between align-items-lg-center container-xl py-6 mx-xl-auto w-full">
             {/* Left Side: Logo and Navigation Menu in the same flex container */}
             <div className="flex items-center w-full lg:w-auto">
               {/* Logo */}
@@ -66,11 +66,12 @@ export const Header = () => {
                 <img
                   src="https://2025.eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-maroon.svg"
                   className="inline-block w-[125px] xl:w-[150px]"
+                  alt="eku"
                 />
               </a>
             </div>
             {/* Right Side: Nav, Search Icon */}
-            <div className="lg:flex lg:items-center">
+            <div className="d-lg-flex align-items-lg-center">
               {/* Navigation Menu */}
               <div className="pl-0">
                 {" "}
@@ -361,10 +362,10 @@ export const Header = () => {
           <a href="https://application.eku.edu/portal/apply_eku" className="text-white px-6 py-2 flex items-center">
             Apply Now
           </a>
-          <a className="text-white px-6 py-2 flex items-center" href="#">
+          <a className="text-white px-6 py-2 flex items-center" href="/">
             Get Info
           </a>
-          <a className="text-white px-6 py-2 flex items-center">
+          <a className="text-white px-6 py-2 flex items-center" href="/">
             Search
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -4,12 +4,11 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import { Dashboard } from "./components/Dashboard";
 import { Sidebar } from "./components/Sidebar";
-import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
 import { Body } from "./styles/Body";
 
 // header functionality needs to work
-// do you need a way to control padding around dashboard?
 
 export default function Remote(props) {
   return (
@@ -41,10 +40,10 @@ export default function Remote(props) {
         <Header></Header>
         <div className="container-fluid">
           <div className="row flex-wrap-reverse">
-            <Sidebar></Sidebar>
             <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4 py-3">
               <Dashboard {...props}></Dashboard>
             </main>
+            <Sidebar></Sidebar>
           </div>
         </div>
         <Footer></Footer>
