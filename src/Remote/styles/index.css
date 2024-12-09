@@ -2040,3 +2040,7 @@ a:where(:not(.wp-element-button)) {
     height: 0;
   }
 }
+
+.font-size-small {
+  font-size: small !important;
+}

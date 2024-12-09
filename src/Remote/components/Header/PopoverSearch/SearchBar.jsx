@@ -1,7 +1,7 @@
 export const SearchBar = () => {
   return (
     <div
-      className="flex items-center space-x-2 absolute right-0 mt-2 transition-all duration-300 ease-in-out bg-white rounded shadow-lg p-4 w-[100vw] lg:w-[50vw] xl:w-[50vw]"
+      className="z-1 flex items-center space-x-2 absolute right-0 mt-2 transition-all duration-300 ease-in-out bg-white rounded shadow-lg p-4 w-[100vw] lg:w-[50vw] xl:w-[50vw]"
       id="search-bar"
     >
       <form
