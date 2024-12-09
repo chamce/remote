@@ -14,13 +14,15 @@ export const NavLink = ({
 }) => {
   const As = as;
 
-  const entireClassName = ["font-size-small nav-link d-flex align-items-center gap-2 text-primary", className]
+  const entireClassName = [
+    "ms-3 font-size-small nav-link lh-sm d-flex align-items-center gap-2 text-primary",
+    className,
+  ]
     .filter((element) => element)
     .join(" ");
 
   return (
     <As className={entireClassName} href={href} {...rest}>
-      <svg className="bi"></svg>
       {children}
     </As>
   );
