@@ -1,7 +1,7 @@
 export const defaultProps = {
   children: (
     <>
-      <div className="border border-dark rounded overflow-hidden material-shadow">
+      <div className="p-3 border border-dark rounded overflow-hidden material-shadow">
         <h5>Table</h5>
         <div className="table-responsive small">
           <table className="table table-striped table-sm table-borderless mb-0">
