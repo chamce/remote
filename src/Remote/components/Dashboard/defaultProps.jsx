@@ -1,22 +1,10 @@
 export const defaultProps = {
   children: (
     <>
-      <canvas
-        style={{
-          boxSizing: "border-box",
-          display: "block",
-          width: 1224,
-          height: 516,
-        }}
-        className="w-100 border"
-        height={1033}
-        width={2448}
-        id="myChart"
-      />
-      <div>
-        <h2>Section title</h2>
+      <div className="border border-dark rounded overflow-hidden material-shadow">
+        <h5>Table</h5>
         <div className="table-responsive small">
-          <table className="table table-striped table-sm mb-0">
+          <table className="table table-striped table-sm table-borderless mb-0">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -143,29 +131,87 @@ export const defaultProps = {
           </table>
         </div>
       </div>
-    </>
-  ),
-  toolbar: (
-    <>
-      <div className="btn-group me-2">
-        <button className="btn btn-sm btn-outline-secondary" type="button">
-          Share
-        </button>
-        <button className="btn btn-sm btn-outline-secondary" type="button">
-          Export
-        </button>
-      </div>
-      <button
-        className="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1"
-        type="button"
-      >
-        <svg className="bi">
-          <use xlinkHref="#calendar3" />
+      <div className="card border-dark material-shadow">
+        <svg
+          className="bd-placeholder-img card-img-top"
+          preserveAspectRatio="xMidYMid slice"
+          aria-label="Placeholder: Image cap"
+          xmlns="http://www.w3.org/2000/svg"
+          focusable="false"
+          height={180}
+          width="100%"
+          role="img"
+        >
+          <title>Placeholder</title>
+          <rect fill="#868e96" height="100%" width="100%" />
+          <text fill="#dee2e6" dy=".3em" y="50%" x="50%">
+            Image cap
+          </text>
         </svg>
-        This week
-      </button>
+        <div className="card-body">
+          <h5 className="card-title">Image cap card</h5>
+          <p className="card-text">
+            This is a wider card with supporting text below as a natural lead-in to additional content. This content is
+            a little bit longer.
+          </p>
+          <p className="card-text">
+            <small className="text-body-secondary">Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
+      <div className="card border-dark text-bg-dark material-shadow">
+        <svg
+          className="bd-placeholder-img bd-placeholder-img-lg card-img"
+          preserveAspectRatio="xMidYMid slice"
+          aria-label="Placeholder: Card image"
+          xmlns="http://www.w3.org/2000/svg"
+          focusable="false"
+          height={270}
+          width="100%"
+          role="img"
+        >
+          <title>Placeholder</title>
+          <rect fill="#868e96" height="100%" width="100%" />
+          <text fill="#dee2e6" dy=".3em" y="50%" x="50%">
+            Card image
+          </text>
+        </svg>
+        <div className="card-img-overlay">
+          <h5 className="card-title">Image overlay card</h5>
+          <p className="card-text">
+            This is a wider card with supporting text below as a natural lead-in to additional content. This content is
+            a little bit longer.
+          </p>
+          <p className="card-text">
+            <small>Last updated 3 mins ago</small>
+          </p>
+        </div>
+      </div>
     </>
   ),
+  toolbar:
+    // (
+    //   <>
+    //     <div className="btn-group me-2">
+    //       <button className="btn btn-sm btn-outline-secondary" type="button">
+    //         Share
+    //       </button>
+    //       <button className="btn btn-sm btn-outline-secondary" type="button">
+    //         Export
+    //       </button>
+    //     </div>
+    //     <button
+    //       className="btn btn-sm btn-outline-secondary dropdown-toggle d-flex align-items-center gap-1"
+    //       type="button"
+    //     >
+    //       <svg className="bi">
+    //         <use xlinkHref="#calendar3" />
+    //       </svg>
+    //       This week
+    //     </button>
+    //   </>
+    // )
+    false,
   renderer: ({ children, toolbar, heading }) => (
     <>
       {(heading || toolbar) && (
@@ -177,7 +223,7 @@ export const defaultProps = {
       {children}
     </>
   ),
-  heading: "Dashboard",
+  heading: false,
   className: "",
   vstack: true,
   as: "div",
