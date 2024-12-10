@@ -1,5 +1,5 @@
 import Remote from "./Remote";
 
 export default function App() {
-  return <Remote heading="Heading"></Remote>;
+  return <Remote heading="Remote"></Remote>;
 }
