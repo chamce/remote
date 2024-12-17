@@ -21,5 +21,13 @@ export const describeColumns = (rows) => {
     });
   });
 
-  return Object.values(lookup).map(({ values, ...rest }) => ({ values: new Set([...values].sort()), ...rest }));
+  const getType = (types) =>
+    Object.entries(types).sort(([, a], [, b]) => b - a)[0][0] === "number" ? "numericColumn" : null;
+
+  return Object.values(lookup).map(({ values, types, ...rest }) => ({
+    values: new Set([...values].sort()),
+    type: getType(types),
+    types,
+    ...rest,
+  }));
 };
