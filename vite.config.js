@@ -27,11 +27,11 @@ export default defineConfig(({ mode }) => ({
       output: { exports: "named" },
     },
     lib: {
-      entry: resolve(__dirname, "src/Remote/index.jsx"),
+      entry: resolve(__dirname, "src/helpers/index.js"),
       fileName: "remote",
       formats: ["cjs"],
     },
-    outDir: "wrapper",
+    outDir: "helpers",
   },
   define: mode === "production" ? { "process.env.NODE_ENV": '"production"' } : {},
   server: { open: true },
