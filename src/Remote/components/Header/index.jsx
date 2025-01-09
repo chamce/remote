@@ -52,7 +52,7 @@ export const Header = () => {
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-23206"
                   id="menu-item-23206"
                 >
-                  <a href="https://2025.eku.edu/in/">inEKU</a>
+                  <a href="https://eku.edu/in/">inEKU</a>
                 </li>
               </ul>{" "}
             </div>
@@ -67,7 +67,7 @@ export const Header = () => {
               {/* Logo */}
               <a href="/">
                 <img
-                  src="https://2025.eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-maroon.svg"
+                  src="https://eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-maroon.svg"
                   className="inline-block w-[125px] xl:w-[150px]"
                   alt="eku"
                 />
@@ -87,25 +87,25 @@ export const Header = () => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-15968"
                     id="menu-item-15968"
                   >
-                    <a href="https://2025.eku.edu/academics/">Academics</a>
+                    <a href="https://eku.edu/academics/">Academics</a>
                   </li>
                   <li
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-16018"
                     id="menu-item-16018"
                   >
-                    <a href="https://2025.eku.edu/admissions/">Admissions</a>
+                    <a href="https://eku.edu/admissions/">Admissions</a>
                   </li>
                   <li
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2619"
                     id="menu-item-2619"
                   >
-                    <a href="https://2025.eku.edu/tuition-and-aid/">Tuition &amp; Aid</a>
+                    <a href="https://eku.edu/tuition-and-aid/">Tuition &amp; Aid</a>
                   </li>
                   <li
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2618"
                     id="menu-item-2618"
                   >
-                    <a href="https://2025.eku.edu/life-at-eku/">Life @ EKU</a>
+                    <a href="https://eku.edu/life-at-eku/">Life @ EKU</a>
                   </li>
                   <li
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-824"
@@ -123,13 +123,13 @@ export const Header = () => {
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2617"
                     id="menu-item-2617"
                   >
-                    <a href="https://2025.eku.edu/about/">About</a>
+                    <a href="https://eku.edu/about/">About</a>
                   </li>
                   <li
                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-12917"
                     id="menu-item-12917"
                   >
-                    <a href="https://2025.eku.edu/info-for/">Info For</a>
+                    <a href="https://eku.edu/info-for/">Info For</a>
                   </li>
                 </ul>{" "}
               </div>

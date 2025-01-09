@@ -11,7 +11,7 @@ export const Nav = ({ toggle, hidden }) => {
           <div>
             <a className="block" href="/">
               <img
-                src="https://2025.eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-white.svg"
+                src="https://eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-white.svg"
                 className="h-8"
                 alt="EKU Logo"
               />

@@ -14,7 +14,7 @@ export const Footer = () => {
                 <div className="mb-6">
                   <a className="inline-block mx-auto mx-md-0" href="/">
                     <img
-                      src="https://2025.eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-white.svg"
+                      src="https://eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-white.svg"
                       className="mx-auto mx-md-0"
                       width={150}
                       alt="eku"
@@ -103,31 +103,31 @@ export const Footer = () => {
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-17834"
                       id="menu-item-17834"
                     >
-                      <a href="https://2025.eku.edu/directory/">Office &amp; Department Directory</a>
+                      <a href="https://eku.edu/directory/">Office &amp; Department Directory</a>
                     </li>
                     <li
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-17835"
                       id="menu-item-17835"
                     >
-                      <a href="https://2025.eku.edu/people/">EKU Faculty &amp; Staff</a>
+                      <a href="https://eku.edu/people/">EKU Faculty &amp; Staff</a>
                     </li>
                     <li
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-17870"
                       id="menu-item-17870"
                     >
-                      <a href="https://2025.eku.edu/state-authorization/">State Authorization</a>
+                      <a href="https://eku.edu/state-authorization/">State Authorization</a>
                     </li>
                     <li
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-20884"
                       id="menu-item-20884"
                     >
-                      <a href="https://2025.eku.edu/accreditation/">Accreditation</a>
+                      <a href="https://eku.edu/accreditation/">Accreditation</a>
                     </li>
                     <li
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-21426"
                       id="menu-item-21426"
                     >
-                      <a href="https://2025.eku.edu/contact-us/">Contact Us</a>
+                      <a href="https://eku.edu/contact-us/">Contact Us</a>
                     </li>
                   </ul>{" "}
                 </div>
@@ -139,13 +139,13 @@ export const Footer = () => {
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-17826"
                       id="menu-item-17826"
                     >
-                      <a href="https://2025.eku.edu/it/">Information Technology</a>
+                      <a href="https://eku.edu/it/">Information Technology</a>
                     </li>
                     <li
                       className="menu-item menu-item-type-post_type menu-item-object-help_guide menu-item-17855"
                       id="menu-item-17855"
                     >
-                      <a href="https://2025.eku.edu/in/guides/cares-fund-distribution-student-plan/">
+                      <a href="https://eku.edu/in/guides/cares-fund-distribution-student-plan/">
                         CARES Fund Distribution
                       </a>
                     </li>
@@ -159,7 +159,7 @@ export const Footer = () => {
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-17838"
                       id="menu-item-17838"
                     >
-                      <a href="https://2025.eku.edu/in/">inEKU</a>
+                      <a href="https://eku.edu/in/">inEKU</a>
                     </li>
                   </ul>{" "}
                 </div>
@@ -171,7 +171,7 @@ export const Footer = () => {
                       className="menu-item menu-item-type-post_type menu-item-object-page menu-item-19301"
                       id="menu-item-19301"
                     >
-                      <a href="https://2025.eku.edu/press-and-media/">Press and Media</a>
+                      <a href="https://eku.edu/press-and-media/">Press and Media</a>
                     </li>
                     <li
                       className="menu-item menu-item-type-custom menu-item-object-custom menu-item-17836"

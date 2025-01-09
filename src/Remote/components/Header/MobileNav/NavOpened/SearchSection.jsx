@@ -13,7 +13,7 @@ export const SearchSection = ({ hidden, toggle }) => {
       <div className="flex space-x-2 w-full mr-4">
         <form
           className="w-full flex items-center space-x-2"
-          action="https://2025.eku.edu/search/"
+          action="https://eku.edu/search/"
           role="search"
           method="get"
         >

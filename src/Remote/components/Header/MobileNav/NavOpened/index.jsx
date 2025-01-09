@@ -22,7 +22,7 @@ export const NavOpened = ({ toggle, hidden }) => {
           <div>
             <a className="block" href="/">
               <img
-                src="https://2025.eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-maroon.svg"
+                src="https://eku.edu/wp-content/themes/eku2025/resources/img/eku-wordmark-maroon.svg"
                 className="h-8"
                 alt="EKU Logo"
               />
@@ -57,28 +57,28 @@ export const NavOpened = ({ toggle, hidden }) => {
         <nav className="flex flex-col text-xl font-normal pt-2 mb-8">
           <ul className="flex flex-col divide-y divide-gray-200" id="menu-primary-navigation-1">
             <li className="page_item page-item-15968">
-              <a href="https://2025.eku.edu/academics/">
+              <a href="https://eku.edu/academics/">
                 <span className="text-eku-maroon font-semibold px-6 py-3 block hover:bg-gray-100 hover:text-black transition-colors duration-200">
                   Academics
                 </span>
               </a>
             </li>
             <li className="page_item page-item-16018">
-              <a href="https://2025.eku.edu/admissions/">
+              <a href="https://eku.edu/admissions/">
                 <span className="text-eku-maroon font-semibold px-6 py-3 block hover:bg-gray-100 hover:text-black transition-colors duration-200">
                   Admissions
                 </span>
               </a>
             </li>
             <li className="page_item page-item-2619">
-              <a href="https://2025.eku.edu/tuition-and-aid/">
+              <a href="https://eku.edu/tuition-and-aid/">
                 <span className="text-eku-maroon font-semibold px-6 py-3 block hover:bg-gray-100 hover:text-black transition-colors duration-200">
                   Tuition &amp; Aid
                 </span>
               </a>
             </li>
             <li className="page_item page-item-2618">
-              <a href="https://2025.eku.edu/life-at-eku/">
+              <a href="https://eku.edu/life-at-eku/">
                 <span className="text-eku-maroon font-semibold px-6 py-3 block hover:bg-gray-100 hover:text-black transition-colors duration-200">
                   Life @ EKU
                 </span>
@@ -99,14 +99,14 @@ export const NavOpened = ({ toggle, hidden }) => {
               </a>
             </li>
             <li className="page_item page-item-2617">
-              <a href="https://2025.eku.edu/about/">
+              <a href="https://eku.edu/about/">
                 <span className="text-eku-maroon font-semibold px-6 py-3 block hover:bg-gray-100 hover:text-black transition-colors duration-200">
                   About
                 </span>
               </a>
             </li>
             <li className="page_item page-item-12917">
-              <a href="https://2025.eku.edu/info-for/">
+              <a href="https://eku.edu/info-for/">
                 <span className="text-eku-maroon font-semibold px-6 py-3 block hover:bg-gray-100 hover:text-black transition-colors duration-200">
                   Info For
                 </span>
@@ -129,7 +129,7 @@ export const NavOpened = ({ toggle, hidden }) => {
             <a className="block hover:text-black" href="https://ekusports.com/">
               Athletics
             </a>
-            <a href="https://2025.eku.edu/info-for/community" className="block hover:text-black">
+            <a href="https://eku.edu/info-for/community" className="block hover:text-black">
               Community
             </a>
             <a href="https://www.alumni.eku.edu/s/1763/24/home.aspx?gid=2&pgid=404" className="block hover:text-black">
@@ -137,7 +137,7 @@ export const NavOpened = ({ toggle, hidden }) => {
             </a>
           </div>
           <div className="space-y-3">
-            <a href="https://2025.eku.edu/info-for/current-students/" className="block hover:text-black">
+            <a href="https://eku.edu/info-for/current-students/" className="block hover:text-black">
               Students
             </a>
             <a href="https://experience.elluciancloud.com/eku/" className="block hover:text-black">
