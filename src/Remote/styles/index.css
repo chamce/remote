@@ -1,3 +1,7 @@
+.dropdown-toggle {
+  flex-wrap: nowrap !important;
+}
+
 /*! CSS Used from: https://2025.eku.edu/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1 ; media=all */
 @media all {
   ul {
