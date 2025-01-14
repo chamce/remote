@@ -6,7 +6,10 @@ export const lists = [
       { href: "https://www.irserver2.eku.edu/reports/qualtrics/", label: "Qualtrics Survey Software" },
       { href: "https://www.irserver2.eku.edu/reports/eku-course-evaluations/", label: "Course Evaluations" },
       { href: "https://form.asana.com/?k=V3l3wViQWRhfjob8Y5iAbQ&d=978674317228910", label: "Data Request Form" },
-      { href: "https://strategicplanning.eku.edu/eku-strategic-plan", label: "Strategic Plan" },
+      {
+        href: "https://www.eku.edu/highlights/presidential-initiatives-and-strategic-planning/",
+        label: "Strategic Plan",
+      },
       { href: "https://www.irserver2.eku.edu/reports/eku-program-review/", label: "Program Review" },
       { href: "https://gened.eku.edu/general-education-assessment", label: "General Education Assessment" },
     ],
