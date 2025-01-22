@@ -371,7 +371,7 @@ a:where(:not(.wp-element-button)) {\r
       color: var(--fallback-nc, oklch(var(--nc) / var(--tw-text-opacity)));\r
     }\r
   }\r
-  .btn {\r
+  /* .btn {\r
     display: inline-flex;\r
     height: 3rem;\r
     min-height: 3rem;\r
@@ -408,10 +408,10 @@ a:where(:not(.wp-element-button)) {\r
     background-color: oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity));\r
     --tw-bg-opacity: 1;\r
     --tw-border-opacity: 1;\r
-  }\r
-  .btn:disabled {\r
+  } */\r
+  /* .btn:disabled {\r
     pointer-events: none;\r
-  }\r
+  } */\r
   .btn-square {\r
     height: 3rem;\r
     width: 3rem;\r
@@ -424,22 +424,22 @@ a:where(:not(.wp-element-button)) {\r
     padding: 0px;\r
   }\r
   @media (hover: hover) {\r
-    .btn:hover {\r
+    /* .btn:hover {\r
       --tw-border-opacity: 1;\r
       border-color: var(--fallback-b3, oklch(var(--b3) / var(--tw-border-opacity)));\r
       --tw-bg-opacity: 1;\r
       background-color: var(--fallback-b3, oklch(var(--b3) / var(--tw-bg-opacity)));\r
-    }\r
+    } */\r
     .btn-ghost:hover {\r
       border-color: transparent;\r
     }\r
-    .btn:disabled:hover {\r
+    /* .btn:disabled:hover {\r
       --tw-border-opacity: 0;\r
       background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));\r
       --tw-bg-opacity: 0.2;\r
       color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));\r
       --tw-text-opacity: 0.2;\r
-    }\r
+    } */\r
     :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover {\r
       cursor: pointer;\r
       outline: 2px solid transparent;\r
@@ -524,11 +524,11 @@ a:where(:not(.wp-element-button)) {\r
     border-right: 1px solid;\r
     background-color: transparent;\r
   }\r
-  .btn:active:hover,\r
+  /* .btn:active:hover,\r
   .btn:active:focus {\r
     animation: button-pop 0s ease-out;\r
     transform: scale(var(--btn-focus-scale, 0.97));\r
-  }\r
+  } */\r
   .btn-ghost {\r
     border-width: 1px;\r
     border-color: transparent;\r
@@ -539,13 +539,13 @@ a:where(:not(.wp-element-button)) {\r
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);\r
     outline-color: currentColor;\r
   }\r
-  .btn:disabled {\r
+  /* .btn:disabled {\r
     --tw-border-opacity: 0;\r
     background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));\r
     --tw-bg-opacity: 0.2;\r
     color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));\r
     --tw-text-opacity: 0.2;\r
-  }\r
+  } */\r
   .input-bordered {\r
     border-color: var(--fallback-bc, oklch(var(--bc) / 0.2));\r
   }\r

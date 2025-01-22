@@ -345,7 +345,7 @@ a:where(:not(.wp-element-button)) {
       color: var(--fallback-nc, oklch(var(--nc) / var(--tw-text-opacity)));
     }
   }
-  .btn {
+  /* .btn {
     display: inline-flex;
     height: 3rem;
     min-height: 3rem;
@@ -382,10 +382,10 @@ a:where(:not(.wp-element-button)) {
     background-color: oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity));
     --tw-bg-opacity: 1;
     --tw-border-opacity: 1;
-  }
-  .btn:disabled {
+  } */
+  /* .btn:disabled {
     pointer-events: none;
-  }
+  } */
   .btn-square {
     height: 3rem;
     width: 3rem;
@@ -398,22 +398,22 @@ a:where(:not(.wp-element-button)) {
     padding: 0px;
   }
   @media (hover: hover) {
-    .btn:hover {
+    /* .btn:hover {
       --tw-border-opacity: 1;
       border-color: var(--fallback-b3, oklch(var(--b3) / var(--tw-border-opacity)));
       --tw-bg-opacity: 1;
       background-color: var(--fallback-b3, oklch(var(--b3) / var(--tw-bg-opacity)));
-    }
+    } */
     .btn-ghost:hover {
       border-color: transparent;
     }
-    .btn:disabled:hover {
+    /* .btn:disabled:hover {
       --tw-border-opacity: 0;
       background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));
       --tw-bg-opacity: 0.2;
       color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
       --tw-text-opacity: 0.2;
-    }
+    } */
     :where(.menu li:not(.menu-title, .disabled) > *:not(ul, details, .menu-title)):not(.active, .btn):hover {
       cursor: pointer;
       outline: 2px solid transparent;
@@ -498,11 +498,11 @@ a:where(:not(.wp-element-button)) {
     border-right: 1px solid;
     background-color: transparent;
   }
-  .btn:active:hover,
+  /* .btn:active:hover,
   .btn:active:focus {
     animation: button-pop 0s ease-out;
     transform: scale(var(--btn-focus-scale, 0.97));
-  }
+  } */
   .btn-ghost {
     border-width: 1px;
     border-color: transparent;
@@ -513,13 +513,13 @@ a:where(:not(.wp-element-button)) {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
     outline-color: currentColor;
   }
-  .btn:disabled {
+  /* .btn:disabled {
     --tw-border-opacity: 0;
     background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));
     --tw-bg-opacity: 0.2;
     color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
     --tw-text-opacity: 0.2;
-  }
+  } */
   .input-bordered {
     border-color: var(--fallback-bc, oklch(var(--bc) / 0.2));
   }
