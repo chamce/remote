@@ -2,9 +2,7 @@ import { useData } from "../../../hooks/useData";
 import { NavLink } from "./NavLink";
 
 export const Sidebar = () => {
-  const lists = useData(
-    "https://raw.githubusercontent.com/chancellor-w-whitaker/json-example/refs/heads/main/sidebar.json",
-  );
+  const lists = useData("https://www.irserver2.eku.edu/Libraries/json/sidebar.json");
 
   return (
     <div className="sidebar col-md-3 col-lg-2 p-0 bg-body-tertiary material-shadow-lg">
