@@ -3,14 +3,15 @@ import { HelmetProvider as Html, Helmet as Head } from "react-helmet-async";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 import { Dashboard } from "./components/Dashboard";
+import { Dropdown } from "./components/Dropdown";
 import { Sidebar } from "./components/Sidebar";
-import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 import { Body } from "./styles/Body";
 
 // header functionality needs to work
 
-export default function Remote(props) {
+const Remote = (props) => {
   return (
     <Html>
       <Head>
@@ -50,7 +51,9 @@ export default function Remote(props) {
       </Body>
     </Html>
   );
-}
+};
+
+export default Object.assign(Remote, { Dropdown });
 
 // ! always keep it simple
 
