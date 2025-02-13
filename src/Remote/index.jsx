@@ -16,24 +16,28 @@ const Remote = (props) => {
     <Html>
       <Head>
         <link
-          href="https://chamce.github.io/favicons/apple-touch-icon.png"
+          href="https://irserver2.eku.edu/libraries/favicons/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
         ></link>
         <link
-          href="https://chamce.github.io/favicons/favicon-32x32.png"
+          href="https://irserver2.eku.edu/libraries/favicons/favicon-32x32.png"
           type="image/png"
           sizes="32x32"
           rel="icon"
         ></link>
         <link
-          href="https://chamce.github.io/favicons/favicon-16x16.png"
+          href="https://irserver2.eku.edu/libraries/favicons/favicon-16x16.png"
           type="image/png"
           sizes="16x16"
           rel="icon"
         ></link>
-        <link href="https://chamce.github.io/favicons/manifest.json" rel="manifest"></link>
-        <link href="https://chamce.github.io/favicons/safari-pinned-tab.svg" color="#5bbad5" rel="mask-icon"></link>
+        <link href="https://irserver2.eku.edu/libraries/favicons/manifest.json" rel="manifest"></link>
+        <link
+          href="https://irserver2.eku.edu/libraries/favicons/safari-pinned-tab.svg"
+          color="#5bbad5"
+          rel="mask-icon"
+        ></link>
         <meta name="msapplication-TileColor" content="#da532c"></meta>
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
